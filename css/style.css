@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue); 
+    font-family: overpass;
+    color: white; 
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--Light-Grey);
+    line-height: 1.5rem;
+}
+
+button {
+    font-family: overpass;
+    transition-duration: 0.4s;
+    
+}
+.bt{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bt button{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    background-color: hsl(212, 17%, 20%);
+    color: white;
+    font-size: 15px;
+    margin: 1.5rem 0;
+    padding-top: 0.2rem;
+}
+
+.bt :hover{
+    cursor: pointer;
+    background-color: var(--Orange);
+}
+
+.bt :focus{
+    background-color: var(--Medium-Grey);
+}
+
+#sub{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: var(--Orange);
+    color: var(--White);
+    border-radius: 20px;
+    font-weight: 400;
+    padding-top: 0.9rem;
+}
+
+#sub:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+.header {
+    width: 3rem;
+    height: 3rem;
+    background-color:hsl(212, 17%, 20%); 
+    border-radius: 100px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info h3{
+    padding: 1rem 0;
+}
+
+.card1{
+    width: 23rem;
+    padding: 1.5rem;
+    margin: 12rem auto 1rem auto;
+    background-color: var(--Dark-Blue);
+    border-radius: 25px;
+}
+
+
+
+/*---CADR2---*/
+
+
+
+.card2{
+    width: 23rem;
+    padding: 2.5rem 1.5rem;
+    margin: 12rem auto 1rem auto;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+.select{
+    margin: 1.5rem;
+    padding: 3px 20px;
+    background:hsl(212, 17%, 20%);
+    border-radius: 20px;
+    color: var(--Orange);
+}
+
+.thanks{
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    padding: 1rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
